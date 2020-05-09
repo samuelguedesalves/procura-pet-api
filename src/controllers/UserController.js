@@ -23,6 +23,7 @@ module.exports = {
                     const token = authentic.sign( user._id )
 
                     user.password = undefined;
+                    user.__v = undefined;
 
                     return response.send({ message: 'Success!', user , accessToken: `Bearer:${token}` });
                 } )
