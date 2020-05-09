@@ -91,26 +91,25 @@ Header params
 }
 
 //--------------RESPONSE--------------
-{
-	[
-	  {
-	    "_id": "5eaf8341b33903347451b1e8",
-	    "title": "teste caso 3",
-	    "description": "teste de caso",
-	    "localization": "Ji-Paraná",
-	    "phone": "699404658",
-	    "user_id": "000000000000"
-	  },
-	  {
-	    "_id": "000000000000",
-	    "title": "Caso teste 2",
-	    "description": "este é um caso teste 2",
-	    "localization": "Ji-Paraná",
-	    "phone": "69993707070",
-	    "user_id": "5eaf83f1b33903347451b1e9"
-	  }
-	]
-}
+[
+	{
+		"_id": "000000000000",
+		"title": "Caso teste 2",
+		"description": "este é um caso teste 2",
+		"localization": "Ji-Paraná",
+		"phone": "69993707070",
+		"user_id": "5eaf83f1b33903347451b1e9"
+	},
+	{
+		"_id": "000000000000",
+		"title": "Caso teste 2",
+		"description": "este é um caso teste 2",
+		"localization": "Ji-Paraná",
+		"phone": "69993707070",
+		"user_id": "5eaf83f1b33903347451b1e9"
+	}
+	
+]
 ```
 
 ### Criar novo caso
@@ -219,7 +218,7 @@ Está rota tem como função e objetivo o upload de imagens de casos,
 enctype="multipart/form-data"
 Body
 {
-	"file": image
+	"file": {"image"}
 }
 
 Header params
